@@ -2,7 +2,7 @@
 
 ## Local development setup
 
-`pip install Flask flask-restplus pysqlite3`
+`pip install -e`
 
 `export FLASK_APP=app`
 
