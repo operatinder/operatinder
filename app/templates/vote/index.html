@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Snippet{% endblock %}</h1>
+  {% if g.user %}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+<div>
+    <form id="vote_form" action="/vote" method="post">
+        <input type="hidden" name="snippet" value="{{ snippet }}" />
+        <input type ="submit" name="action" value="down">
+        {{ snippet }}
+        <input type ="submit" name="action" value="up">
+    </form>
+</div>
+{% endblock %}
