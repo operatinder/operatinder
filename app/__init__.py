@@ -28,15 +28,15 @@ def create_app(test_config=None):
     from . import db
     db.init_app(app)
 
-    from . import api
-    api.init_app(app)
-
     from . import auth
     app.register_blueprint(auth.bp)
 
     from . import vote
     app.register_blueprint(vote.bp)
     app.add_url_rule('/', endpoint='index')
+
+    from . import api
+    api.init_app(app)
 
     return app
 

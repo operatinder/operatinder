@@ -11,7 +11,7 @@ def dict_factory(cursor, row):
 
 def init_app(app):
 
-    api = Api(app)
+    api = Api(app, doc='/docs')
 
     @api.route('/api')
     class HelloWorld(Resource):
