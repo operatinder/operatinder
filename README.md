@@ -1,4 +1,4 @@
-
+*This repo was abandoned as the deployment of the database to Heroku failed ...*
 
 ## Local development setup
 
