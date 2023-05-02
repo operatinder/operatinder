@@ -1,6 +1,6 @@
 ItsDangerous==1.1.0
 Click==7.0
-Flask==1.1.1
+Flask==2.2.5
 flask-restplus==0.13.0
 gunicorn==19.9.0
 isort==4.3.21
